@@ -1,0 +1,12 @@
+.app {
+  height: 100vh;
+
+  overscroll-behavior-y: none;
+  display: flex;
+  position: relative;
+}
+@media (max-width: 950px) {
+  .app {
+    flex-direction: column-reverse;
+  }
+}
