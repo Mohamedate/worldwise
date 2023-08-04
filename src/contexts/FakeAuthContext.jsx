@@ -21,7 +21,6 @@ const FAKE_USER = {
   name: "Mohamed",
   email: "moh@gmail.com",
   password: "12345",
-  avatar: "https://i.pravatar.cc/100?u=zz",
 };
 
 function AuthProvider({ children }) {

@@ -20,7 +20,7 @@ export default function Homepage() {
           We keeps track of your adventures.
         </h1>
 
-        <Link className="cta" to="/login">
+        <Link className="cta" to="login">
           start{" "}
         </Link>
       </section>

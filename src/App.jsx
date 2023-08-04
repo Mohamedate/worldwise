@@ -16,15 +16,16 @@ const App = () => {
       <AuthProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="googleEarth/" element={<Homepage />} />
-            <Route path="app" element={<AppLayout />}>
+            <Route path="/googleEarth" element={<Homepage />}></Route>
+            <Route path="googleEarth/login" element={<Login />} />
+            <Route path="googleEarth/login/app" element={<AppLayout />}>
               <Route index element={<Navigate replace to="cities" />} />
               <Route path="cities" element={<CityList />} />
               <Route path="cities/:id" element={<City />} />
               <Route path="countries" element={<CountriesList />} />
               <Route path="form" element={<Form />} />
             </Route>
-            <Route path="login" element={<Login />} />
+
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
