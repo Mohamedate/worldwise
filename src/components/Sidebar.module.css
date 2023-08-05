@@ -10,8 +10,8 @@
 /* #0f2331 */
 @media (max-width: 800px) {
   .sidebar {
-    flex-basis: 60%;
+    flex-basis: 45%;
 
-    padding: 2rem 8%;
+    padding: 2rem 5%;
   }
 }

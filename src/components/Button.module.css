@@ -8,7 +8,12 @@
   border-radius: 5px;
   cursor: pointer;
 }
-
+@media (max-width: 768px) {
+  .btn {
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;
+  }
+}
 .primary {
   font-weight: 700;
   background-color: var(--color-brand--2);
@@ -32,4 +37,11 @@
   background-color: var(--color-brand--2);
   color: var(--color-dark--1);
   box-shadow: 0 0.4rem 1.2rem rgba(36, 42, 46, 0.16);
+  /* width: 25rem; */
+}
+@media (max-width: 768px) {
+  .position {
+    font-size: 1.2rem;
+    bottom: 2rem;
+  }
 }

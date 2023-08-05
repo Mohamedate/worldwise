@@ -56,7 +56,12 @@ textarea {
   transition: all 0.2s;
   color: var(--color-brand--2);
 }
-
+@media (max-width: 768px) {
+  input,
+  textarea {
+    padding: 1rem;
+  }
+}
 input:focus {
   outline: none;
   background-color: var(--color-dark--2);

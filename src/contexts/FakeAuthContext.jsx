@@ -19,7 +19,7 @@ const initialState = {
 
 const FAKE_USER = {
   name: "Mohamed",
-  email: "moh@gmail.com",
+  email: "m@gmial.com",
   password: "12345",
 };
 
