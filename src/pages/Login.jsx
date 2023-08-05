@@ -18,7 +18,7 @@ function Login() {
 
   useEffect(() => {
     if (isAuth) {
-      navigate("app", { replace: true });
+      navigate("/app", { replace: true });
     }
   }, [isAuth]);
 
