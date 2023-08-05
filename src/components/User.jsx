@@ -9,7 +9,7 @@ function User() {
 
   function handleLogout() {
     logout();
-    navigate("/");
+    navigate("/googleEarth/");
   }
 
   return (

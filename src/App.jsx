@@ -16,9 +16,9 @@ const App = () => {
       <AuthProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="login" element={<Login />} />
-            <Route path="app" element={<AppLayout />}>
+            <Route path="/googleEarth" element={<Homepage />} />
+            <Route path="googleEarth/login" element={<Login />} />
+            <Route path="googleEarth/app" element={<AppLayout />}>
               <Route index element={<Navigate replace to="cities" />} />
               <Route path="cities" element={<CityList />} />
               <Route path="cities/:id" element={<City />} />
