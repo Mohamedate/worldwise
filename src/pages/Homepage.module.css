@@ -53,7 +53,7 @@
   .homepage {
     flex-direction: column-reverse;
     gap: 5rem;
-    justify-content: flex-end;
+    justify-content: center;
   }
   .homepage h1 {
     font-size: 3rem;
