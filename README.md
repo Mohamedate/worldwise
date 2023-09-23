@@ -32,7 +32,7 @@
 
 ### What I learned
 
-I have learned a lot of powerful techniques in React, such as managing state with `Context Api`, rendering components conditionally, how to split large code to small components
+I have learned a lot of powerful techniques in React, such as managing state with `Context Api` `React Router`, rendering components conditionally, how to split large code to small components
 and many other fun things.
 
 ## Author
