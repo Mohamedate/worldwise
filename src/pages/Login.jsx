@@ -5,15 +5,15 @@ import { useAuth } from "../contexts/FakeAuthContext";
 import { useNavigate } from "react-router-dom";
 import logo from "../images/logo.png";
 function Login() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [enimate, setEnimate] = useState(false);
   const { login, isAuth } = useAuth();
   const navigate = useNavigate();
 
   function handleLogin(e) {
     e.preventDefault();
-    login(email, password);
+    login(name, email);
   }
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function Login() {
     return () => {
       setEnimate(false);
     };
-  }, [email, password]);
+  }, [name, email]);
 
   return (
     <main className={styles.login}>
@@ -39,19 +39,19 @@ function Login() {
 
         <div className={styles.row}>
           <input
-            type="email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            placeholder="Email address"
+            type="name"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+            placeholder="Your Name"
           />
         </div>
 
         <div className={styles.row}>
           <input
-            type="password"
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-            placeholder="Password"
+            type="email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            placeholder="email"
           />
         </div>
 

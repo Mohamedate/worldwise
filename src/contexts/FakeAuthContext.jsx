@@ -17,19 +17,16 @@ const initialState = {
   isAuth: false,
 };
 
-const FAKE_USER = {
-  name: "Mohamed",
-  email: "m@gmail.com",
-  password: "12345",
-};
-
 function AuthProvider({ children }) {
   const [{ user, isAuth }, dispatch] = useReducer(reducer, initialState);
 
-  function login(email, password) {
-    if (email === FAKE_USER.email && password === FAKE_USER.password) {
-      dispatch({ type: "login", payloads: FAKE_USER });
-    }
+  function login(name, email) {
+    const fake_user = {
+      name: name,
+      email: email,
+    };
+
+    dispatch({ type: "login", payloads: fake_user });
   }
   function logout() {
     dispatch({ type: "logout" });
