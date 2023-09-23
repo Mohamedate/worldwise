@@ -9,7 +9,7 @@ function User() {
 
   function handleLogout() {
     logout();
-    navigate("/googleEarth/");
+    navigate("/worldwise/");
   }
 
   return (

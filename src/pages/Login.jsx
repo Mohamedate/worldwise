@@ -18,7 +18,7 @@ function Login() {
 
   useEffect(() => {
     if (isAuth) {
-      navigate("/googleEarth/app", { replace: true });
+      navigate("/worldwise/app", { replace: true });
     }
   }, [isAuth]);
 
